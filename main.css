@@ -47,16 +47,16 @@
 
 /* this is Banner-Section start */
 .banner-section {
-  @apply relative respScreen bg-[#F44335];
+  @apply respScreen relative bg-[#F44335];
 }
 .banner {
-  @apply relative scale-105;
+  @apply relative;
 }
 .banner-wave {
   @apply absolute bottom-0;
 }
 .banner-div {
-  @apply text-white absolute top-0 flex flex-col justify-center w-full lg:py-12 md:py-8 py-2 md:mt-0 -mt-6 xl:scale-125 md:scale-100 scale-75;
+  @apply text-white absolute top-0 flex flex-col justify-center w-full lg:py-12 md:py-8 py-2 md:mt-0 -mt-6 md:scale-100 scale-75;
 }
 .span-1 {
   @apply text-[#F44335];
@@ -77,3 +77,30 @@
   @apply md:bg-white md:text-[#F44335] bg-[#F44335]  text-white px-5 py-2 rounded-full md:hover:scale-110 hover:scale-90 md:hover:bg-[#F44335]  md:hover:text-white hover:text-[#F44335]  hover:bg-white duration-500 transition hover:border-none lg:scale-110 md:scale-100 scale-50 md:mt-0 -mt-4;
 }
 /* this is Banner-Section end */
+
+/* this is Card-Section start */
+.card-section {
+  @apply grid lg:grid-cols-4 grid-cols-1 gap-8 lg:px-12 px-2 py-[1px];
+}
+.card-div-1 {
+  @apply flex justify-center items-center md:text-3xl text-xl font-bold;
+}
+.card-1 {
+  @apply text-[#2D3142] lg:pt-0 pt-4;
+}
+.card-div-2 {
+  @apply grid grid-cols-3 col-span-3 md:gap-6 gap-2 lg:pt-0 pt-1 w-full;
+}
+.card-2 {
+  @apply bg-[#2D3142] md:px-4 px-2 md:py-8 py-4 md:pb-10 pb-6 rounded-lg flex flex-col gap-2 hover:scale-110 transition-all duration-300 lg:hover:-mt-10 md:hover:-mt-6 lg:hover:mb-12 md:hover:mb-8 md:hover:drop-shadow-2xl md:scale-100 w-full;
+}
+.card-logo {
+  @apply bg-[#DDDDDD] rounded-full p-1 w-fit md:scale-100 scale-75;
+}
+.card-2-head {
+  @apply text-[#FFFFFF] md:text-lg text-sm font-semibold;
+}
+.card-2-foot {
+  @apply text-[#DDDDDD] md:text-sm text-[9px];
+}
+/* this is Card-Section end */
