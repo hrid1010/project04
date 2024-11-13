@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.respScreen{
+    @apply container mx-auto;
+}
+/* this is Header-Section start */
+.header-section{
+    @apply respScreen bg-white flex justify-between items-center py-3;
+}
+.logo{
+    @apply scale-95;
+}
+.nav-bar{
+    @apply flex flex-row gap-4;
+}
+.nav-items{
+    @apply text-[#072125] hover:text-[#F44335];
+}
+.nav-item-2{
+    @apply text-[#F44335] hover:text-[#F44335];
+}
+.header-section-button{
+    @apply bg-[#F44335] text-white px-4 py-2 rounded-lg;
+}
+/* this is Header-Section end */
+
