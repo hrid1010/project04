@@ -27,6 +27,36 @@
         <div>
           <button class="header-section-button">Register Interest</button>
         </div>
+        <button class="hamburger-menu" id="menu-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- this is Hamburger-Menu -->
+      <div class="hamburger-section hidden md:hidden" id="menu">
+        <div class="hamB-section-div">
+          <a class="hamB-items" href="#">Home</a>
+          <a class="hamB-item-2" href="#">About Us</a>
+          <a class="hamB-items" href="#">Upskill</a>
+          <a class="hamB-items" href="#">Contact Us</a>
+        </div>
+
+        <div class="w-full">
+          <button class="hamB-section-button">Register Interest</button>
+        </div>
       </div>
     </section>
     <!-- this is Header-Section end -->
@@ -70,5 +100,14 @@
       </div>
     </section>
     <!-- this is Banner-Section end -->
+
+    <script>
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      menuBtn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
   </body>
 </html>
