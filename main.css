@@ -2,27 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-.respScreen{
-    @apply container mx-auto;
+.respScreen {
+  @apply container mx-auto;
 }
 /* this is Header-Section start */
-.header-section{
-    @apply respScreen bg-white flex justify-between items-center py-3;
+.header-section {
+  @apply respScreen bg-white flex justify-between items-center py-3;
 }
-.logo{
-    @apply scale-95;
+.logo {
+  @apply scale-95;
 }
-.nav-bar{
-    @apply flex flex-row gap-4;
+.nav-bar {
+  @apply flex flex-row gap-4;
 }
-.nav-items{
-    @apply text-[#072125] hover:text-[#F44335];
+.nav-items {
+  @apply text-[#072125] hover:text-[#F44335] hover:animate-pulse hover:duration-1000 transition-all;
 }
-.nav-item-2{
-    @apply text-[#F44335] hover:text-[#F44335];
+.nav-item-2 {
+  @apply text-[#F44335] hover:text-[#F44335] hover:animate-pulse hover:duration-1000 transition-all;
 }
-.header-section-button{
-    @apply bg-[#F44335] text-white px-4 py-2 rounded-lg;
+.header-section-button {
+  @apply bg-[#F44335] text-white px-4 py-2 rounded-lg hover:scale-105 hover:translate-y-1 transition-all;
 }
 /* this is Header-Section end */
 
+/* this is Banner-Section start */
+.banner-section {
+  @apply relative respScreen bg-[#F44335];
+}
+.banner {
+  @apply relative;
+}
+.banner-wave {
+  @apply absolute bottom-0;
+}
+.banner-div {
+  @apply text-white absolute top-0 flex flex-col justify-center w-full lg:py-12 md:py-8 py-2 md:mt-0 -mt-6 xl:scale-125 md:scale-100 scale-75;
+}
+.span-1 {
+  @apply text-[#F44335];
+}
+.banner-d-1 {
+  @apply flex flex-row justify-center gap-1 lg:text-[20px] md:text-[16px] text-[12px];
+}
+.banner-d-2 {
+  @apply text-center lg:text-4xl md:text-3xl text-xl underline-offset-4 md:space-y-1 md:py-4 py-2 font-semibold;
+}
+.banner-d-3 {
+  @apply lg:text-[18px] md:text-sm text-[10px] text-center mx-auto w-2/3 lg:w-1/2 py-1;
+}
+.banner-d-4 {
+  @apply flex justify-center py-3;
+}
+.banner-button {
+  @apply md:bg-white md:text-[#F44335] bg-[#F44335]  text-white px-5 py-2 rounded-full hover:scale-110 hover:bg-[#F44335]  hover:text-white duration-500 transition hover:border-none lg:scale-110 md:scale-100 scale-50 md:mt-0 -mt-4;
+}
+/* this is Banner-Section end */
