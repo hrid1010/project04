@@ -137,3 +137,24 @@
   @apply hover:translate-x-12 transition hover:duration-700 hover:scale-105 hover:-translate-y-12 cursor-pointer lg:animate-pulse duration-1000 hover:animate-none;
 }
 /* this is about-section end*/
+
+/* this is Creative-Before strat */
+.creative-before{
+  @apply bg-white flex flex-row gap-28 justify-around items-center w-full p-16 px-36;
+}
+.c-b-div{
+  @apply flex flex-col p-6 relative w-2/3 h-full scale-110 hover:scale-125 hover:contrast-200 transition-all duration-500 hover:shadow-xl hover:-mt-24 hover:cursor-progress;
+}
+.c-b-logo {
+  @apply w-fit;
+}
+.c-b-text-1{
+  @apply text-xl font-bold;
+}
+.c-b-text-2{
+  @apply text-[12px] text-[#757095] pt-1;
+}
+.c-b-bg{
+  @apply absolute h-full right-0 top-0 scale-125;
+}
+/* this is Creative-Before end */
