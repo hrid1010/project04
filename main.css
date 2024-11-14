@@ -92,7 +92,7 @@
   @apply grid grid-cols-3 col-span-3 md:gap-6 gap-2 lg:pt-0 pt-1 w-full;
 }
 .card-2 {
-  @apply bg-[#2D3142] md:px-4 px-2 md:py-8 py-4 md:pb-10 pb-6 rounded-lg flex flex-col gap-2 hover:scale-110 transition-all duration-300 lg:hover:-mt-10 md:hover:-mt-6 lg:hover:mb-12 md:hover:mb-8 md:hover:drop-shadow-2xl md:scale-100 w-full;
+  @apply bg-[#2D3142] md:px-4 px-2 md:py-8 py-4 md:pb-10 pb-6 rounded-lg flex flex-col gap-2 md:hover:scale-110 transition-all duration-300 lg:hover:-mt-10 md:hover:-mt-6 lg:hover:mb-12 md:hover:mb-8 md:hover:drop-shadow-2xl md:scale-100 w-full hover:ring-2 md:hover:ring-0;
 }
 .card-logo {
   @apply bg-[#DDDDDD] rounded-full p-1 w-fit md:scale-100 scale-75;
@@ -104,3 +104,36 @@
   @apply text-[#DDDDDD] md:text-sm text-[9px];
 }
 /* this is Card-Section end */
+
+/* this is about-section start */
+.about-section {
+  @apply flex flex-row justify-center relative xl:my-20 lg:mt-16 mt-14;
+}
+.about {
+  @apply respScreen w-full grid grid-rows-2 justify-center items-center select-none bg-transparent relative;
+}
+.about-text {
+  @apply flex flex-col justify-center items-end pe-6 md:scale-100 scale-75;
+}
+.a-s-t-1 {
+  @apply lg:text-lg md:text-[16px] text-[14px] text-[#F44335] uppercase;
+}
+.a-s-t-2 {
+  @apply lg:text-4xl text-3xl font-semibold text-[#2D3142] capitalize -ms-1;
+}
+.a-s-t-3 {
+  @apply lg:text-[16px] md:text-sm text-[12px] text-[#000000] lg:py-4 py-2 lg:pb-12 pb-6;
+}
+.a-s-button {
+  @apply flex flex-row items-center justify-center gap-1 hover:shadow-xl border border-[#F44335] text-[#F44335] font-semibold rounded-full px-4 py-1 hover:bg-[#F44335] hover:text-white transition-all duration-500 hover:-translate-y-3 lg:scale-110 text-[12px] md:text-[14px] md:w-auto w-full;
+}
+.about-gellary {
+  @apply flex justify-center items-center;
+}
+.a-m-g-img {
+  @apply hover:-translate-x-12 transition hover:duration-700 hover:scale-105 hover:translate-y-12 cursor-pointer lg:animate-pulse duration-1000 hover:animate-none;
+}
+.a-v-g-img {
+  @apply hover:translate-x-12 transition hover:duration-700 hover:scale-105 hover:-translate-y-12 cursor-pointer lg:animate-pulse duration-1000 hover:animate-none;
+}
+/* this is about-section end*/
